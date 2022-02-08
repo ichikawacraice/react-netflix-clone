@@ -16,7 +16,6 @@ function App() {
       // Pegando a lista total
       const list = await Tmdb.getHomeList();
       setMovieList(list);
-      console.log(list);
 
       // Pegando o Featured
       const originals = list.filter((i) => i.slug === 'popular');
