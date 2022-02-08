@@ -1,3 +1,16 @@
+# Cine Database
+[Site](https://cinedb.crc.dev.br/)
+
+Projeto de estudo em React.
+Foi criado um projeto usando o database https://www.themoviedb.org/
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
