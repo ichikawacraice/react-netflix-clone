@@ -23,8 +23,8 @@ export default {
   getHomeList: async () => [
     {
       id: '1',
-      slug: 'originals',
-      title: 'Originais',
+      slug: 'popular',
+      title: 'Populares',
       items: await basicFetch(`/discover/tv?with_network=213&${LANG}&${KEY}`),
     },
     {

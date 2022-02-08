@@ -56,8 +56,6 @@
   color: white;
   max-width: 40%;
   text-shadow: 2px 2px 4px rgba(0,0,0,.45);
-  max-height: 150px;
-  overflow: hidden;
 }
 
 .featured--buttons {
@@ -100,4 +98,15 @@
 
 .featured--genres-items:last-child::after {
   content: "";
+}
+
+@media (max-width: 760px) {
+
+  .featured {
+    height: 90vh;
+  }
+  .featured--description {
+    max-width: 100%;
+    margin-right: 30px;
+  }
 }

@@ -4,6 +4,7 @@ import Tmdb from './Tmdb';
 import MovieRow from './components/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const [movieList, setMovieList] = useState([]);
@@ -15,9 +16,10 @@ function App() {
       // Pegando a lista total
       const list = await Tmdb.getHomeList();
       setMovieList(list);
+      console.log(list);
 
       // Pegando o Featured
-      const originals = list.filter((i) => i.slug === 'originals');
+      const originals = list.filter((i) => i.slug === 'popular');
       const randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
       const chosen = originals[0].items.results[randomChosen];
       const chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
@@ -53,10 +55,15 @@ function App() {
         ))}
 
       </section>
-      <footer>
-        Feito com <span role="img" aria-label="coração">❤️</span> por Gabriel Ichikawa Craice
-        Projeto de estudo
-      </footer>
+
+      <Footer />
+
+      {movieList.length <= 0
+      && (
+      <div className="loading">
+        <img src="/loading.gif" alt="loading icon" />
+      </div>
+      )}
     </div>
   );
 }

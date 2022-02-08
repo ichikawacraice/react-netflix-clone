@@ -1,0 +1,21 @@
+.footer {
+  background-color: #0a0a0a;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer--sub {
+  font-size: 0.8rem;
+}
+
+.footer--icons a {
+  color: white;
+  transition: all ease 0.2s;
+}
+
+.footer--icons a:hover {
+  color: rgba(255,255,255,60%);
+}
