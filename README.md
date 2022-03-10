@@ -2,9 +2,9 @@
 [Site](https://cinedb.crc.dev.br/)
 
 Projeto de estudo em React.
-Foi criado um projeto usando o database https://www.themoviedb.org/
+O projeto começou como um clone visual do Netflix para estudo e desenvolvimento das habilidades, depois foi implementada a API do site de database de filmes https://www.themoviedb.org/ para gerar o catálogo.
 
 TO-DO:
-- Arrumar notas
-- Criar modal com mais info ao clicar
+- Arrumar notas não decimais
+- Criar modal com mais informações dos filmes ao clicar
 - refazer header
